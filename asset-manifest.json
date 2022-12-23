@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/judgement_ui/static/css/main.90e4679e.css",
-    "main.js": "/judgement_ui/static/js/main.7bdec605.js",
-    "static/js/787.8c764800.chunk.js": "/judgement_ui/static/js/787.8c764800.chunk.js",
-    "static/media/no_trump.png": "/judgement_ui/static/media/no_trump.8ab4b4253dda4942c8ea.png",
-    "static/media/spade.png": "/judgement_ui/static/media/spade.10505e57dca583c87ff6.png",
-    "static/media/club.png": "/judgement_ui/static/media/club.8d7ba0effc922010f207.png",
-    "static/media/heard.png": "/judgement_ui/static/media/heard.b947174971693fb9ed0e.png",
-    "static/media/diamond.png": "/judgement_ui/static/media/diamond.c2f52db32fcb98a9c9f5.png",
-    "index.html": "/judgement_ui/index.html",
-    "main.90e4679e.css.map": "/judgement_ui/static/css/main.90e4679e.css.map",
-    "main.7bdec605.js.map": "/judgement_ui/static/js/main.7bdec605.js.map",
-    "787.8c764800.chunk.js.map": "/judgement_ui/static/js/787.8c764800.chunk.js.map"
+    "main.css": "/jgame/static/css/main.90e4679e.css",
+    "main.js": "/jgame/static/js/main.a1cb7327.js",
+    "static/js/787.8c764800.chunk.js": "/jgame/static/js/787.8c764800.chunk.js",
+    "static/media/no_trump.png": "/jgame/static/media/no_trump.8ab4b4253dda4942c8ea.png",
+    "static/media/spade.png": "/jgame/static/media/spade.10505e57dca583c87ff6.png",
+    "static/media/club.png": "/jgame/static/media/club.8d7ba0effc922010f207.png",
+    "static/media/heard.png": "/jgame/static/media/heard.b947174971693fb9ed0e.png",
+    "static/media/diamond.png": "/jgame/static/media/diamond.c2f52db32fcb98a9c9f5.png",
+    "index.html": "/jgame/index.html",
+    "main.90e4679e.css.map": "/jgame/static/css/main.90e4679e.css.map",
+    "main.a1cb7327.js.map": "/jgame/static/js/main.a1cb7327.js.map",
+    "787.8c764800.chunk.js.map": "/jgame/static/js/787.8c764800.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90e4679e.css",
-    "static/js/main.7bdec605.js"
+    "static/js/main.a1cb7327.js"
   ]
 }
