@@ -1,38 +1,115 @@
+/* Glow on hover CSS was taken directly from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 and the author is https://codepen.io/kocsten.  */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Chivo+Mono:ital,wght@0,100;0,500;0,600;1,500&family=Rubik+Puddles&display=swap');
 .App {
   text-align: center;
+  background-color: aqua;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Table {
+  border: '3px solid black';
+  font-family: 'Chivo Mono', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FinalStandings {
+  width: 75%;
+  font-family: 'Calligraffitti', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.EntriesInFinalStandings {
+  background-color: #D3D3D3;
+  color:black;
+  font-weight: bold;
+  font-size: x-large;
 }
 
-.App-link {
-  color: #61dafb;
+.tbody {  
+  border: '4px solid pink';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerEntry {
+  border: '4px solid pink';
+} 
+
+
+.inline-block {
+display: inline-block;
+}
+
+.select {
+  float: left;
+}
+
+tr:nth-child(1) {
+  background-color: gold;
+}
+tr:nth-child(2) {
+  background-color: #868480;
+}
+
+tr:nth-child(3) {
+  background-color: #CD7F32;
+}
+
+
+
+.glow-on-hover {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: large;
+  color: #ffffff;
+  margin: 3px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
