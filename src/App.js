@@ -11,8 +11,8 @@ function App() {
   const [players, setPlayers] = useState([])
   const [finalStanding, setFinalStanding] = useState([])
   const fullGame = [8,7,6,5,4,3,2,1,2,3,4,5,6,7,8]
-  const trump = ['Spade', 'Heart', 'Diamond', 'Club', 'No Trump']
-  const logos = [spade, Heart, diamond, clove, noTrump]
+  const trump = ['Spade', 'Heart', 'Club', 'Diamond', 'No Trump']
+  const logos = [spade, Heart, clove, diamond, noTrump]
   const handleSort = (event) => {
     event.preventDefault()
     const sortedPlayers = [...players]
